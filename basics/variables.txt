@@ -1,0 +1,37 @@
+package basics
+
+import "fmt"
+
+var middleName = "doe" // package level variable, type inferred, cant use go for notation
+
+func main() {
+	// var age int
+	// var name string = "john"
+	// var name1 = "jack" // type inferred, no need to initialize with string, when initializing with value
+
+	// count := 10      // short declaration, only inside functions, go for notation
+	// isActive := true // type inferred
+
+	// middleName = "smith" // re-assigning package level variable // this works with "="
+	middleName := "smith" // re-declaring and assigning a new value using short declaration operator ":="
+	fmt.Println(middleName)
+	// Default values
+	// Numeric types: 0
+	// String: ""
+	// Boolean: false
+	// Pointers,slices, maps, interfaces nd structs : nil
+
+
+	// -- SCOPES 
+	// go has block scope, variables declared inside a block are not accessible outside the block
+	{
+		var blockVar = "I am inside a block"
+		fmt.Println(blockVar)
+	}
+	// fmt.Println(blockVar) // this will cause an error, as blockVar is not accessible here
+}
+
+func printName() {
+	firstName := "John"
+	fmt.Println(firstName)
+}

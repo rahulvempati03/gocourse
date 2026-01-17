@@ -1,0 +1,24 @@
+package basics
+
+type EmployeeGoogle struct {
+	FirstName  string
+	LastName   string
+	EmployeeId string
+}
+
+func main() {
+	// PascalCase
+	// Eg. CalculateArea, UserInfo, EmployeeID
+	// Structs, Interfaces, Enums, and exported functions use PascalCase
+
+	// snake_cse
+	// Eg. calculate_area, user_info, employee_id, can be used as file names
+
+	// UPPERCASE
+	// Eg. MAX_VALUE, DEFAULT_TIMEOUT
+	// Constants that are intended to be immutable and globally accessible use UPPERCASE
+
+	//camelCase
+	// Eg. calculateArea, userInfo, employeeId
+	// Local variables and function parameters use camelCase
+}
