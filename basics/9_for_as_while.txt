@@ -1,0 +1,21 @@
+package basics
+
+import "fmt"
+
+func main() {
+
+	for i := range 10 {
+		i++;
+		fmt.Println(i)
+	}
+
+	num := 1
+	for num <= 10 {
+		if num%2 == 0 {
+			num++
+			continue
+		}
+		fmt.Println("Odd Number:", num)
+		num++
+	}
+}
